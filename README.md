@@ -1,6 +1,8 @@
 sslh
 ====
 
+[![Build Status](https://travis-ci.org/kbrebanov/ansible-sslh.svg?branch=master)](https://travis-ci.org/kbrebanov/ansible-sslh)
+
 Installs sslh.
 
 Requirements
