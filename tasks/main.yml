@@ -1,2 +1,17 @@
 ---
 # tasks file for sslh
+
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+  tags:
+    - sslh
+
+- include: CentOS.yml
+  when: ansible_distribution == "CentOS"
+  tags:
+    - sslh
+
+- include: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags:
+    - sslh

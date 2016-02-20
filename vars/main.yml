@@ -1,2 +1,5 @@
 ---
 # vars file for sslh
+
+sslh_packages:
+  - sslh
